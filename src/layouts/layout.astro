@@ -1,0 +1,35 @@
+---
+import "../styles/reset.css"
+import "../styles/variables.css"
+import Head from "../components/head.astro"
+import Header from "../components/header.astro"
+import Hero from "../components/hero.astro"
+import Proyectos from "../components/proyectos.astro"
+import Habilidades from "../components/habilidades.astro"
+import Footer from "../components/footer.astro"
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<Head/>
+
+
+<body>
+
+    <Header/>
+
+    <Hero/>
+
+    <Proyectos/>
+
+    <Habilidades/>
+
+    <slot/>
+    
+</body>
+
+<Footer/>
+
+</html>
