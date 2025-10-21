@@ -3,16 +3,74 @@ import {Image} from "astro:assets";
     import cara from "../images/cara.jpg"
 ---
 
-<h1>¡Hola, soy Osmi! <span>👋</span> </h1>
-<p>Bienvenido a mi humilde portfolio.</p>
-
-<Image src={cara} alt="Fondo caricatura"/>
+<section class="header__contenedor"> 
 
 
+    <div>
+        <h1 class="header__titulo">¡Hola, soy Osmi! <span>👋</span> </h1>
+        <p class="header__parrafo">Bienvenido a mi humilde portfolio.</p>
+    </div>
+    
+    <Image class="header__foto" src={cara} alt="Fondo caricatura"/>
+
+</section>
 
 <style>
 
+.header__contenedor{
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(10px,4vw,20px); 
+    /*Tamaño minimo/ tamaño ideal proporcional/ tamaño maximo*/
+    align-items: center;
+    max-width: 950px;
+    margin: auto;
+    margin-top: 50px;
+    padding: clamp(16px,4vw,48px);
+    background:
+    linear-gradient(135deg, #e6e9ff, #f8e8ff),
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.6), transparent 60%);
+    background-blend-mode: soft-light;
+    box-shadow: inset 0 0 25px rgba(255, 220, 255, 0.3),0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+
+}
+
+.header__titulo{
+
+    font-family: var(--font_titulo);
+    color: var(--color_titulo);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+
+.header__parrafo{
+
+    font-family: var(--font_texto);
+    color: var(--color_subtitulo);
+    margin-top: 2.5rem;
+    opacity: .85;
+    font-size: 2rem;
+    margin-left: 10px;
+
+
+}
+
+.header__foto{
+
+    justify-self: center;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px var(--bordes);
+    
+
+}
 
 
 

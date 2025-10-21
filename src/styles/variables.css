@@ -1,0 +1,74 @@
+
+    
+    /* Variables */
+
+    :root {
+    --font_titulo: "Poppins";
+    --font_texto: "Quicksand";
+    --bordes: rgba(222,18,193,0.3);
+
+
+    --color_titulo: #3b2b6d;
+    --color_subtitulo: #5b4d94;
+    --color_texto: #4b4b5a;
+    --color_acento: #b77dff;
+
+
+
+    }
+
+
+/* Fuentes */
+
+
+    @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/AnyConv.com__Poppins-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    }
+
+
+    @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/AnyConv.com__Poppins-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+    @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/AnyConv.com__Poppins-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    }
+
+
+    
+    @font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/AnyConv.com__Quicksand-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    }
+
+
+    @font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/AnyConv.com__Quicksand-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+    @font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/AnyConv.com__Quicksand-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    }
+
+
+
+
