@@ -28,14 +28,11 @@ import {Image} from "astro:assets";
     margin: auto;
     margin-top: 50px;
     padding: clamp(16px,4vw,48px);
-    background:
-    linear-gradient(135deg, #e6e9ff, #f8e8ff),
-    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.6), transparent 60%);
+    background: var(--color_principal);
     background-blend-mode: soft-light;
-    box-shadow: inset 0 0 25px rgba(255, 220, 255, 0.3),0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--contenedor_sombras);
     border-radius: 20px;
     
-
 }
 
 .header__titulo{
@@ -46,6 +43,7 @@ import {Image} from "astro:assets";
     font-weight: bold;
     text-align: center;
     margin-left: 20px;
+
 }
 
 
@@ -67,17 +65,9 @@ import {Image} from "astro:assets";
     justify-self: center;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 10px 25px var(--bordes);
-    
+    box-shadow: 0 10px 25px var(--bordes);  
 
 }
-
-
-
-
-
-
-
 
 
 
