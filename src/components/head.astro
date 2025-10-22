@@ -1,16 +1,17 @@
 
+---
 
+const {title, description}= Astro.props;
+import { ClientRouter } from "astro:transitions";
 
-
-
-
+---
 
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osmi | Portfolio</title>
-    <meta name="description" content="Portfolio simple de alumno">
-    <link rel="icon" href="/favicon.png">
-
+    <title>{title}</title>
+    <meta name="description" content={description}/>
+    <ClientRouter />
+    
 </head>

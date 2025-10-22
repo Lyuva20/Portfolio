@@ -1,17 +1,17 @@
 ---
 import "../styles/variables.css";
+import Head from "../components/head.astro";
+
+const {title, description} = Astro.props;
 ---
 
 <!doctype html>
 
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Error 404</title>
-        <meta name="description" content="Error 404">
-        <link rel="icon" href="/favicon.png" />
-    </head>
+
+
+    <Head title="Error 404" description="Página no encontrada" />
+    
     
     <body class="error__body">
 
