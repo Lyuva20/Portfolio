@@ -1,0 +1,72 @@
+---
+import "../styles/variables.css";
+---
+
+<!doctype html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Error 404</title>
+        <meta name="description" content="Error 404">
+        <link rel="icon" href="/favicon.png" />
+    </head>
+    
+    <body class="error__body">
+
+        <main class="error__contenedor">
+
+            <h1 class="error__titulo">404</h1>
+            <p class="error__texto"> Lo siento, esta ruta no existe 😩</p>
+
+            
+        </main>
+
+    </body>
+
+</html>
+
+<style>
+
+.error__body {
+
+    margin: 0;
+    font-family: var(--font_texto);
+    background: transparent;
+    
+}
+
+.error__contenedor {
+
+    max-width: 900px;
+    margin: 80px auto;
+    padding: clamp(16px, 4vw, 48px);
+    background: var(--color_fondo);
+    background-blend-mode: soft-light;
+    box-shadow: var(--contenedor_sombras);
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.error__titulo {
+
+    font-family: var(--font_titulo);
+    color: var(--color_titulo);
+    font-size: 5rem;
+    margin: 0 0 12px 0;
+
+}
+
+.error__texto {
+
+    color: var(--color_subtitulo);
+    font-size: 3rem;
+    opacity: 0.9;
+    margin: 0 0 24px 0;
+
+}
+
+
+</style>
