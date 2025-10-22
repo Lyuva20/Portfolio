@@ -1,0 +1,157 @@
+---
+import { Image } from "astro:assets";
+    import proyecto1 from "../images/proyecto1.png";
+    import proyecto2 from "../images/proyecto2.png";
+    import proyecto3 from "../images/proyecto3.png";
+---
+
+<section class="proyectos__contenedor">
+
+    <h2 class="proyectos__titulo">Mis Proyectos 🚀</h2>
+
+    <div class="proyectos__grid">
+
+        <!-- Tarjeta 1 -->
+    
+        <article class="proyecto__tarjeta">
+
+            <Image class="proyecto__imagen" src={proyecto1} alt="Proyecto 1" />
+            <h3 class="proyecto__nombre">Tienda online</h3>
+            <p class="proyecto__descripcion">Moda, electrónica y joyería...o lo que la API decida mostrar hoy. 
+            </p>
+            <a class="proyecto__boton" href="" target="_blank">
+                Ver en GitHub
+            </a>
+
+        </article>
+
+            <!-- Tarjeta 2 -->
+        
+        <article class="proyecto__tarjeta">
+
+            <Image class="proyecto__imagen" src={proyecto2} alt="Proyecto 1" />
+            <h3 class="proyecto__nombre">To do list</h3>
+            <p class="proyecto__descripcion">La lista que me recuerda lo poco que cumplo con mis propios objetivos.
+            </p>
+            <a class="proyecto__boton" href="" >
+                Ver en GitHub
+            </a>
+
+        </article>
+
+
+            <!-- Tarjeta 3 -->
+
+        <article class="proyecto__tarjeta">
+
+            <Image class="proyecto__imagen" src={proyecto3} alt="Proyecto 1" />
+            <h3 class="proyecto__nombre">Recreación de plántilla </h3>
+            <p class="proyecto__descripcion">Recreación de la plántilla Simple de Elegant Themes, que de simple no tiene nada.
+            </p>
+            <a class="proyecto__boton" href="" target="_blank">
+                Ver en GitHub
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<style>
+
+
+.proyectos__contenedor {
+
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: clamp(16px, 4vw, 48px);
+    background: var(--color_fondo);
+    background-blend-mode: soft-light;
+    box-shadow:var(--contenedor_sombras);
+    border-radius: 20px;
+    
+}
+
+
+.proyectos__titulo {
+
+    font-family: var(--font_titulo);
+    color: var(--color_titulo);
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+
+.proyectos__grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 4vw, 32px);
+    
+}
+
+
+.proyecto__tarjeta {
+
+    background: var(--font_texto);
+    border-radius: 20px;
+    box-shadow: var(--contenedor_sombras2);
+    text-align: center;
+    padding: 20px;
+    border: var(--contenedor_borde);
+
+}
+
+
+.proyecto__imagen {
+
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 6px 18px var(--bordes);
+
+}
+
+
+.proyecto__nombre {
+
+    font-family: var(--font_titulo);
+    color: var(--color_titulo);
+    font-size: 1.25rem;
+    margin: 10px 0 6px;
+
+}
+
+.proyecto__descripcion {
+
+    font-family: var(--font_texto);
+    color: var(--color_subtitulo);
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 18px;
+    
+}
+
+
+.proyecto__boton {
+
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: var(--color_titulo);
+    color: var(--color_boton);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--sombra_boton);
+}
+
+
+</style>
+

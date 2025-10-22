@@ -1,0 +1,151 @@
+---
+
+
+
+
+---
+
+
+
+<section class="habilidades__contenedor">
+
+    <h2 class="habilidades__titulo"> Mis Habilidades 🧠</h2>
+
+        <ul class="habilidades__lista">
+
+            <li class="habilidad">
+
+                <img class="habilidad__icono" src="/icon/html5.svg" alt="HTML5" />
+                <h3>HTML</h3>
+                <p>Sé poner &lt;div&gt; dentro de &lt;div&gt; dentro de &lt;div&gt;.</p>
+
+            </li>
+
+            <li class="habilidad">
+
+                <img class="habilidad__icono" src="/icon/css.svg" alt="HTML5" />
+                <h3>CSS</h3>
+                <p>50% copiar estilos, 50% llorar por display: flex.</p>
+
+            </li>
+
+            <li class="habilidad">
+                
+                <img class="habilidad__icono" src="/icon/javascript.svg" alt="HTML5" />
+                <h3>JavaScript</h3>
+                <p>Transformando errores en traumas.</p>
+
+            </li>
+
+            <li class="habilidad">
+                
+                <img class="habilidad__icono" src="/icon/git.svg" alt="HTML5" />
+                <h3>Git</h3>
+                <p>Aún debo aprender a hacer commits que entienda.</p>
+
+            </li>
+
+            <li class="habilidad">
+
+                <img class="habilidad__icono" src="/icon/github.svg" alt="HTML5" />
+                <h3>GitHub</h3>
+                <p>Subo códigos y bajo mi autoestima.</p>
+
+            </li>
+
+            <li class="habilidad">
+
+                <img class="habilidad__icono" src="/icon/astro.svg" alt="HTML5" />
+                <h3>Astro</h3>
+                <p>El framework que me llevo a una crisis existencial.</p>
+
+            </li>
+
+        </ul>
+
+</section>
+
+<style>
+
+.habilidades__contenedor {
+
+    max-width: 700px;
+    margin: 64px auto;
+    padding: clamp(16px, 4vw, 48px);
+    background: var(--color_fondo);
+    background-blend-mode: soft-light;
+    box-shadow:var(--contenedor_sombras);
+    border-radius: 20px;
+
+}
+
+
+.habilidades__titulo {
+
+    font-family: var(--font_titulo);
+    color: var(--color_titulo);
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+
+.habilidades__lista {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(14px, 2vw, 22px);
+
+}
+
+
+.habilidad {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background:var(--fondo_texto);
+    border-radius: 16px;
+    padding: 14px 18px;
+    box-shadow: var(--contenedor_sombras2);
+    border: 1px solid var(--contenedor_borde);
+
+}
+
+
+.habilidad__icono {
+
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+
+}
+
+
+.habilidad h3 {
+
+    font-family: var(--font_titulo);
+    color: var(--color_titulo);
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: bold;
+    margin-right: 100px;
+
+}
+
+.habilidad p {
+
+    font-family: var(--font_texto);
+    color: var(--color_subtitulo);
+    font-size: 1rem;
+    margin: 0;
+
+}
+
+
+</style>

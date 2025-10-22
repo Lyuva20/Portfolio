@@ -5,14 +5,21 @@
     :root {
     --font_titulo: "Poppins";
     --font_texto: "Quicksand";
+
+
     --bordes: rgba(222,18,193,0.3);
-
-
     --color_titulo: #3b2b6d;
     --color_subtitulo: #5b4d94;
     --color_texto: #4b4b5a;
     --color_acento: #b77dff;
-
+    --color_fondo: linear-gradient(135deg, #e6e9ff, #f8e8ff);
+    --contenedor_sombras:  inset 0 0 25px rgba(255, 220, 255, 0.3),
+        0 10px 25px rgba(0, 0, 0, 0.1);
+    --contenedor_sombras2: 0 10px 25px rgba(0, 0, 0, 0.05);
+    --fondo_texto:  rgba(255, 255, 255, 0.55);
+    --contenedor_borde: rgba(122, 95, 255, 0.12);
+    --color_boton: #fff;
+    --sombra_boton: 0 8px 18px rgba(0, 0, 0, 0.12);
 
 
     }
