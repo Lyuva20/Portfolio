@@ -1,7 +1,12 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
+
+import { defineConfig } from "astro/config";
+
 export default defineConfig({
-    prefetch:true
+    site: "https://Lyuva20.github.io",
+    base: "/Portfolio/",
+    experimental: {
+        viewTransitions: true,
+        prefetch: true,
+    },
 });
